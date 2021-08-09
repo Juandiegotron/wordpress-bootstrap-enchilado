@@ -24,9 +24,9 @@ html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scro
     --accent-line: #c24642;   /* table-striped and table-select background color */
     --disabled-color: #777777;/* disable and muted_color */
     --main-size: 16px;        /* font size for desktop */
-    --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;  /* body font family */
-    --title-font: "Helvetica Neue", Helvetica, Arial, sans-serif; /* h1,h2,h3,h4 font-family */
-    --accent-font: Georgia, Times, "Times New Roman", serif;    /* blockquote and text-highlight */
+    --main-font: 'Lato', sans-serif;  /* body font family */
+    --title-font: 'Prata', serif; /* h1,h2,h3,h4 font-family */
+    --accent-font: 'Prata', serif;    /* blockquote and text-highlight */
   }
 
 
