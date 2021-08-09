@@ -7,6 +7,13 @@ function bootstrapchile_theme_styles() {
 }
 add_action('wp_enqueue_scripts', 'bootstrapchile_theme_styles');
 /*-----------------------------------------------------------------------------------*/
+/*	Google fonts
+/*-----------------------------------------------------------------------------------*/
+function wpb_add_google_fonts() {
+   wp_enqueue_style( 'wpb-google-fonts', '//fonts.googleapis.com/css?family=Lato:300,700|Prata', false );
+}
+add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+/*-----------------------------------------------------------------------------------*/
 /*Enqueue JS*/
 /*-----------------------------------------------------------------------------------*/
 function bootstrapchile_scripts_styles() {
