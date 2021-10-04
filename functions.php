@@ -50,14 +50,14 @@ register_nav_menus( array(
     'fifth' => __( 'Fifth Menu', 'bootstrapchiletheme' )
 ));
 /*-----------------------------------------------------------------------------------*/
-/*Custom post SUPERDUPER*/
+/*Custom post SEDES*/
 /*-----------------------------------------------------------------------------------*/
 function superduper_post_type(){
 	$args = array(
 		'label'                 => __( 'New post type', 'bootstrapchiletheme' ),
 		'description'           => __( 'Custom post type', 'bootstrapchiletheme' ),
-		'supports'              => array( 'title' ),
-		'menu_icon' 			=> 'dashicons-location-alt',
+		'supports'              => array( 'title','editor','thumbnail' ),
+		'menu_icon' 		=> 'dashicons-location-alt',
 		'public'                => true,
 		'menu_position'         => 5,
 		'has_archive'           => true,
