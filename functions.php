@@ -50,7 +50,7 @@ register_nav_menus( array(
     'fifth' => __( 'Fifth Menu', 'bootstrapchiletheme' )
 ));
 /*-----------------------------------------------------------------------------------*/
-/*Custom post SEDES*/
+/*Custom post SUPERDUPER*/
 /*-----------------------------------------------------------------------------------*/
 function superduper_post_type(){
 	$args = array(
