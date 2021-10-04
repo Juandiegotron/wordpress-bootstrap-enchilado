@@ -50,6 +50,23 @@ register_nav_menus( array(
     'fifth' => __( 'Fifth Menu', 'bootstrapchiletheme' )
 ));
 /*-----------------------------------------------------------------------------------*/
+/*Custom post SUPERDUPER*/
+/*-----------------------------------------------------------------------------------*/
+function superduper_post_type(){
+	$args = array(
+		'label'                 => __( 'New post type', 'bootstrapchiletheme' ),
+		'description'           => __( 'Custom post type', 'bootstrapchiletheme' ),
+		'supports'              => array( 'title' ),
+		'menu_icon' 			=> 'dashicons-location-alt',
+		'public'                => true,
+		'menu_position'         => 5,
+		'has_archive'           => true,
+		'rewrite'               =>  array('slug' => 'superdupercustom'),
+	);
+	register_post_type( 'superduper', $args );
+}
+add_action('init', 'superduper_post_type');
+/*-----------------------------------------------------------------------------------*/
 /*Pagination*/
 /*-----------------------------------------------------------------------------------*/
 function numeric_posts_nav() {
